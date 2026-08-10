@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Help — JSON Checker</title>
+    <meta
+      name="description"
+      content="How to open JSON Checker, check a payload, read problems, and use repairs."
+    />
+    <link rel="icon" href="../assets/img/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/img/icon-128.png" />
+    <link rel="stylesheet" href="../assets/welcome.css" />
+  </head>
+  <body>
+    <header class="masthead wrap">
+      <a class="brand" href="../">
+        <img src="../assets/img/icon-48.png" alt="" width="48" height="48" />
+        JSON Checker
+      </a>
+      <ul class="nav">
+        <li><a href="../">Home</a></li>
+        <li><a href="./" aria-current="page">Help</a></li>
+        <li>
+          <a
+            class="btn"
+            href="https://chromewebstore.google.com/detail/json-checker/STORE_ID"
+            >Install the extension</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main class="wrap">
+      <div class="hero">
+        <p class="eyebrow">Support</p>
+        <h1>Help</h1>
+        <p class="lede">
+          Short answers for opening the panel, checking JSON, and fixing what
+          comes back.
+        </p>
+      </div>
+
+      <div class="prose">
+        <ul class="toc">
+          <li><a href="#open">How to open JSON Checker</a></li>
+          <li><a href="#check">How to check JSON</a></li>
+          <li><a href="#problems">How to read and fix problems</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+        </ul>
+
+        <h2 id="open">How to open JSON Checker</h2>
+        <ol>
+          <li>
+            Click the <strong>puzzle piece</strong> in the top right of Chrome,
+            then the <strong>pin</strong> next to JSON Checker.
+          </li>
+          <li>
+            Click the toolbar icon on any page. The panel opens on the
+            <strong>right side</strong> of the window, not as a popup.
+          </li>
+        </ol>
+        <p>
+          Step-by-step screenshots live on the
+          <a href="../welcome/">welcome page</a>.
+        </p>
+        <p>
+          You can also select JSON on a page, right-click it, and choose
+          <strong>Check selected JSON</strong> — the panel opens with that text
+          already loaded.
+        </p>
+
+        <h2 id="check">How to check JSON</h2>
+        <ul>
+          <li>
+            <strong>Paste</strong> — one click from the clipboard. If Chrome
+            blocks clipboard access, focus the editor and paste with the
+            keyboard.
+          </li>
+          <li>
+            <strong>Open a file</strong> — drop a <code>.json</code> file on the
+            panel, or pick one. Files larger than 2&nbsp;MB are refused by name
+            (the payload is kept in local extension storage).
+          </li>
+          <li>
+            <strong>Type</strong> — the Check tab always shows the editor, empty
+            or not. While it is empty you can also try a broken sample to see
+            how repairs work.
+          </li>
+        </ul>
+        <p>
+          The usual flow is <strong>Paste → Check → Fix</strong>. Format, Copy,
+          and Clear stay on the toolbar and light up once there is text.
+        </p>
+
+        <h2 id="problems">How to read and fix problems</h2>
+        <ul>
+          <li>
+            Offending text is underlined in the editor and marked in the gutter.
+            Hover either for the headline, the line that actually needs
+            changing, and a one-click repair when one exists.
+          </li>
+          <li>
+            Below the editor each problem is a single line: severity,
+            <code>line:column</code>, headline, and repair. Open the chevron for
+            the full explanation.
+          </li>
+          <li>
+            <strong>F8</strong> / <strong>Shift-F8</strong> step through
+            problems from the keyboard.
+          </li>
+          <li>
+            After a successful repair, the <strong>Repaired JSON</strong> and
+            <strong>Changes</strong> tabs show the result and a focused diff.
+          </li>
+        </ul>
+        <p>
+          Valid payloads can still show warnings — duplicate keys, integers past
+          2<sup>53</sup>, or invisible characters inside strings.
+        </p>
+
+        <h2 id="privacy">Privacy</h2>
+        <p>
+          Everything runs on your machine. The extension declares no host
+          permissions and makes no network requests. See the
+          <a href="../privacy/">privacy policy</a> for details.
+        </p>
+      </div>
+    </main>
+
+    <footer class="foot wrap">
+      <ul class="foot-links">
+        <li><a href="../">Home</a></li>
+        <li><a href="../welcome/">Welcome</a></li>
+        <li><a href="./">Help</a></li>
+        <li><a href="../privacy/">Privacy</a></li>
+      </ul>
+      <p>
+        Everything runs locally. JSON Checker declares no host permissions and
+        makes no network requests; payloads stay in your browser.
+      </p>
+    </footer>
+  </body>
+</html>

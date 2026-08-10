@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSON Checker — check JSON in a Chrome side panel</title>
+    <meta
+      name="description"
+      content="Validate JSON in Chrome, see every problem in plain English, and repair common mistakes locally — no network, no host permissions."
+    />
+    <link rel="icon" href="assets/img/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/img/icon-128.png" />
+    <link rel="stylesheet" href="assets/welcome.css" />
+  </head>
+  <body>
+    <header class="masthead wrap">
+      <a class="brand" href="./">
+        <img src="assets/img/icon-48.png" alt="" width="48" height="48" />
+        JSON Checker
+      </a>
+      <ul class="nav">
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="help/">Help</a></li>
+        <li>
+          <!-- Replace STORE_ID with the Chrome Web Store listing id when published -->
+          <a
+            class="btn"
+            href="https://chromewebstore.google.com/detail/json-checker/STORE_ID"
+            >Install the extension</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main class="wrap">
+      <section class="home-hero">
+        <p class="eyebrow">Chrome extension</p>
+        <h1>Check JSON in a side panel</h1>
+        <p class="lede">
+          Paste a payload, see every problem in plain English, and fix common
+          mistakes in one click. Everything stays in your browser.
+        </p>
+        <div class="cta-row">
+          <a
+            class="btn btn-lg"
+            href="https://chromewebstore.google.com/detail/json-checker/STORE_ID"
+            >Install the extension</a
+          >
+          <span class="cta-note">Free · runs fully offline</span>
+        </div>
+      </section>
+
+      <section class="features" aria-label="What you get">
+        <article class="feature">
+          <h2>Every error at once</h2>
+          <p>
+            Parsing recovers after a failure, so six mistakes show up as six
+            findings — not one cryptic token error at a time.
+          </p>
+        </article>
+        <article class="feature">
+          <h2>Plain-English causes</h2>
+          <p>
+            Forgotten commas, invisible characters, and not-JSON payloads are
+            named the way a person would describe them, with the line that
+            actually needs changing.
+          </p>
+        </article>
+        <article class="feature">
+          <h2>Repairs with undo</h2>
+          <p>
+            Trailing commas, single quotes, bare keys, comments, and similar
+            slips can be fixed in one click. Data inside strings is never
+            rewritten.
+          </p>
+        </article>
+      </section>
+
+      <p class="home-privacy">
+        JSON Checker declares no host permissions and makes no network
+        requests. Payloads stay in
+        <code>chrome.storage.local</code>. Read the
+        <a href="privacy/">privacy policy</a>.
+      </p>
+    </main>
+
+    <footer class="foot wrap">
+      <ul class="foot-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="welcome/">Welcome</a></li>
+        <li><a href="help/">Help</a></li>
+        <li><a href="privacy/">Privacy</a></li>
+      </ul>
+      <p>
+        Everything runs locally. JSON Checker declares no host permissions and
+        makes no network requests; payloads stay in your browser.
+      </p>
+    </footer>
+  </body>
+</html>
