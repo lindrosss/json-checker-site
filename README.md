@@ -31,11 +31,8 @@ and keeps working under any prefix on a server (including
 Every page links Install to:
 
 ```
-https://chromewebstore.google.com/detail/json-checker/STORE_ID
+https://chromewebstore.google.com/detail/json-checker/kpglnjajdcmgpbokcnkffecbnemopnkm
 ```
-
-Replace `STORE_ID` with the real Chrome Web Store listing id when the extension
-is published (search the HTML for `STORE_ID`).
 
 ## Light and dark
 
